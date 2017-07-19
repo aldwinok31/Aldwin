@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 private double finalAnswer=0;
 private double numF=0;
     private double numS=0;
-    private DecimalFormat temp = new DecimalFormat(",###,###,###,###.##");
+    private DecimalFormat temp = new DecimalFormat(",###,###,###,###,###.##");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +79,7 @@ else{
             secondNum.setError( "Second Number Required" );
 
         }
-        else{
+        else {
             numF = Double.parseDouble(firstNum.getText().toString());
             numS = Double.parseDouble(secondNum.getText().toString());
             finalAnswer = numF + numS;
@@ -109,10 +109,12 @@ else{
 
 
     }
+    //Exit The App
     public void doExit(View view){
         finish();
 
     }
+    // Clearing the Data
     public void doClear(View view){
         EditText answer = (EditText) findViewById(R.id.editText3);
         EditText firstNum = (EditText) findViewById(R.id.editText);
@@ -127,9 +129,5 @@ else{
 
 
 
-    public void checkD(){
 
-
-
-    }
 }
