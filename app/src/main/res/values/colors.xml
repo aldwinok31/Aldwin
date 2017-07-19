@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#262423</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="blackie">#000000</color>
+    <color name="blackie">#746F6D   </color>
+    <color name="whitie">#EEEAE9</color>
+    <color name="orange">#393535</color>
+    <color name="btncolor">#3A3938 </color>
 </resources>

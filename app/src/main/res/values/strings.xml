@@ -8,4 +8,5 @@
     <string name="divide">/</string>
     <string name="multiply">X</string>
     <string name="clear">C</string>
+    <string name="hint">0</string>
 </resources>

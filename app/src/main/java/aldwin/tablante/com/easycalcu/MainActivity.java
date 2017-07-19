@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 private double finalAnswer=0;
 private double numF=0;
     private double numS=0;
-    private DecimalFormat temp = new DecimalFormat("0.00");
+    private DecimalFormat temp = new DecimalFormat(",###,###,###,###.##");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,14 +25,16 @@ private double numF=0;
         EditText answer = (EditText) findViewById(R.id.editText3);
         EditText firstNum = (EditText) findViewById(R.id.editText);
         EditText secondNum = (EditText) findViewById(R.id.editText2);
-        if(firstNum.getText().toString().trim().equals("")) {
-            firstNum.setError( "First Number Required" );
 
-        }
-        if(secondNum.getText().toString().trim().equals("")) {
-            secondNum.setError( "Second Number Required" );
+            if (firstNum.getText().toString().equals("")) {
+                firstNum.setError("First Number Required");
 
-        }
+            }
+            if (secondNum.getText().toString().equals("")) {
+                secondNum.setError("Second Number Required");
+
+            }
+
         else{
             numF = Double.parseDouble(firstNum.getText().toString());
             numS = Double.parseDouble(secondNum.getText().toString());
@@ -47,11 +49,11 @@ private double numF=0;
         EditText answer = (EditText) findViewById(R.id.editText3);
         EditText firstNum = (EditText) findViewById(R.id.editText);
         EditText secondNum = (EditText) findViewById(R.id.editText2);
-  if(firstNum.getText().toString().trim().equals("")) {
+  if(firstNum.getText().toString().equals("")) {
       firstNum.setError( "First Number Required" );
 
   }
-        if(secondNum.getText().toString().trim().equals("")) {
+        if(secondNum.getText().toString().equals("")) {
             secondNum.setError( "Second Number Required" );
 
         }
@@ -69,11 +71,11 @@ else{
         EditText answer = (EditText) findViewById(R.id.editText3);
         EditText firstNum = (EditText) findViewById(R.id.editText);
         EditText secondNum = (EditText) findViewById(R.id.editText2);
-        if(firstNum.getText().toString().trim().equals("")) {
+        if(firstNum.getText().toString().equals("")) {
             firstNum.setError( "First Number Required" );
 
         }
-        if(secondNum.getText().toString().trim().equals("")) {
+        if(secondNum.getText().toString().equals("")) {
             secondNum.setError( "Second Number Required" );
 
         }
@@ -90,11 +92,11 @@ else{
         EditText answer = (EditText) findViewById(R.id.editText3);
         EditText firstNum = (EditText) findViewById(R.id.editText);
         EditText secondNum = (EditText) findViewById(R.id.editText2);
-        if(firstNum.getText().toString().trim().equals("")) {
+        if(firstNum.getText().toString().equals("")) {
             firstNum.setError( "First Number Required" );
 
         }
-        if(secondNum.getText().toString().trim().equals("")) {
+        if(secondNum.getText().toString().equals("")) {
             secondNum.setError( "Second Number Required" );
 
         }
@@ -123,4 +125,11 @@ else{
         secondNum.setHint("Enter Second Number");
     }
 
+
+
+    public void checkD(){
+
+
+
+    }
 }
