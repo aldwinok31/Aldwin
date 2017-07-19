@@ -15,16 +15,16 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint1"
         android:textSize="16dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint1"
+        android:hint="@string/hint2"
         android:textSize="16dp"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         />
 
     <EditText
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:onClick="doPlus"
 
-            android:text="+"
+            android:text="@string/plus"
             android:textSize="32dp" />
 
         <Button
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:onClick="doMinus"
 
-            android:text="-"
+            android:text="@string/minus"
             android:textSize="32dp" />
 
         <Button
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:onClick="doClear"
 
-            android:text="C"
+            android:text="@string/clear"
             android:textSize="32dp" />
 
     </LinearLayout>
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:onClick="doProduct"
 
-            android:text="X"
+            android:text="@string/multiply"
             android:textSize="32dp" />
 
         <Button
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:onClick="doDivide"
 
-            android:text="/"
+            android:text="@string/divide"
             android:textSize="32dp" />
 
         <Button
