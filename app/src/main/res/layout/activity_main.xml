@@ -48,24 +48,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doPlus"
 
             android:text="+"
-            />
+            android:textSize="32dp" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doMinus"
 
-            android:text="+"
-            />
+            android:text="-"
+            android:textSize="32dp" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doClear"
 
-            android:text="+"
-            />
+            android:text="C"
+            android:textSize="32dp" />
 
     </LinearLayout>
     <LinearLayout
@@ -79,24 +81,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doProduct"
 
-            android:text="+"
-            />
+            android:text="X"
+            android:textSize="32dp" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doDivide"
 
-            android:text="+"
-            />
+            android:text="/"
+            android:textSize="32dp" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="32dp"
+            android:onClick="doExit"
 
-            android:text="+"
-            />
+            android:text="@string/exit"
+            android:textSize="32dp" />
 
     </LinearLayout>
 
